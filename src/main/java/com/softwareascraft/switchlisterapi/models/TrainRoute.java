@@ -2,10 +2,11 @@ package com.softwareascraft.switchlisterapi.models;
 
 public class TrainRoute {
     private final String name;
+    private final String[] stationNames;
 
-    public TrainRoute(String name) {
-
+    public TrainRoute(String name, String[] stationNames) {
         this.name = name;
+        this.stationNames = stationNames;
     }
 
     public String Name() {
@@ -13,6 +14,6 @@ public class TrainRoute {
     }
 
     public String[] Stations() {
-            return new String[0];
+            return stationNames;
     }
 }
