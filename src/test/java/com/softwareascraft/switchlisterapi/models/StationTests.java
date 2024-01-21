@@ -13,6 +13,8 @@ public class StationTests {
         final Station station = new Station("Name1");
         assertThat(station.Name()).isEqualTo("Name1");
     }
+
+    @Test
     void returnsStationName2() {
         final Station station = new Station("Name2");
         assertThat(station.Name()).isEqualTo("Name2");

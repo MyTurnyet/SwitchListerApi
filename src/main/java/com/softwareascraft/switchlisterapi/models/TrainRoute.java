@@ -1,10 +1,12 @@
 package com.softwareascraft.switchlisterapi.models;
 
+import java.util.List;
+
 public class TrainRoute {
     private final String name;
-    private final String[] stationNames;
+    private final List<Station> stationNames;
 
-    public TrainRoute(String name, String[] stationNames) {
+    public TrainRoute(String name, List<Station> stationNames) {
         this.name = name;
         this.stationNames = stationNames;
     }
@@ -13,7 +15,7 @@ public class TrainRoute {
         return name;
     }
 
-    public String[] Stations() {
+    public List<Station> Stations() {
             return stationNames;
     }
 }
