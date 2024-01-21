@@ -13,6 +13,14 @@ public class SwitchlistControllerTests {
         final SwitchlistController controller = new SwitchlistController();
         final String switchList = controller.getSwitchList();
 
-        assertThat(switchList).isEqualTo("");
+        assertThat(switchList).isEqualTo(
+                "Train 1234-Local\n" +
+                "\n" +
+                "Town1\n" +
+                "---------\n" +
+                "\n" +
+                "* Grain Elevator *\n" +
+                "pickup\tBNSF 1234\n" +
+                "set out\tCPR 9876");
     }
 }
