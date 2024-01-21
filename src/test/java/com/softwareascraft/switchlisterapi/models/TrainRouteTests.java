@@ -19,6 +19,11 @@ public class TrainRouteTests {
         final TrainRoute trainRoute = new TrainRoute("express-2345");
         final String name = trainRoute.Name();
         assertThat(name).isEqualTo("express-2345");
-
+    }
+    @Test
+    void returnsNoStationNames() {
+                final TrainRoute trainRoute = new TrainRoute("express-2345");
+        final String[] stations = trainRoute.Stations();
+        assertThat(stations).isEmpty();
     }
 }

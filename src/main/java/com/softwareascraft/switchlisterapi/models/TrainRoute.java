@@ -11,4 +11,8 @@ public class TrainRoute {
     public String Name() {
         return name;
     }
+
+    public String[] Stations() {
+            return new String[0];
+    }
 }
