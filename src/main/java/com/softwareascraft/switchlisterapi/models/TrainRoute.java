@@ -3,11 +3,11 @@ package com.softwareascraft.switchlisterapi.models;
 import java.util.List;
 
 public class TrainRoute {
-    public final String Name;
+    public final String name;
     private final List<Station> stationNames;
 
     public TrainRoute(String name, List<Station> stationNames) {
-        this.Name = name;
+        this.name = name;
         this.stationNames = stationNames;
     }
 

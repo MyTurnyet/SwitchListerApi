@@ -3,9 +3,6 @@ package com.softwareascraft.switchlisterapi.models;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import java.util.Collections;
-import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 
@@ -14,12 +11,12 @@ public class StationTests {
     @Test
     void returnsStationName1() {
         final Station station = new Station("Name1");
-        assertThat(station.Name).isEqualTo("Name1");
+        assertThat(station.name).isEqualTo("Name1");
     }
 
     @Test
     void returnsStationName2() {
         final Station station = new Station("Name2");
-        assertThat(station.Name).isEqualTo("Name2");
+        assertThat(station.name).isEqualTo("Name2");
     }
 }

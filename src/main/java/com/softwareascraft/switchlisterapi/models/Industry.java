@@ -2,11 +2,11 @@ package com.softwareascraft.switchlisterapi.models;
 
 public class Industry {
 
-    public final String Name;
+    public final String name;
     private final int maxCars;
 
     public Industry(String name, int maxCars) {
-        this.Name = name;
+        this.name = name;
         this.maxCars = maxCars;
     }
 
