@@ -35,7 +35,7 @@ public class TrainRouteTests {
     @Test
     void returnsOneStation() {
 
-        List<Station> stationNames = List.of(new Station("Train Station 1", 0, Collections.emptyList()));
+        List<Station> stationNames = List.of(new Station("Train Station 1"));
         final TrainRoute trainRoute = new TrainRoute("express-2345", stationNames);
         final List<Station> stations = trainRoute.Stations();
         assertThat(stations).hasSize(1);

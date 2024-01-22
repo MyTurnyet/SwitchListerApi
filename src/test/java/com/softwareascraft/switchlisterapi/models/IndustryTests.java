@@ -10,8 +10,20 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class IndustryTests {
     @Test
     void shouldReturnName() {
-        final Industry industry = new Industry("Test Industry");
+        final Industry industry = new Industry("Test Industry", 0);
         final String name = industry.Name;
         assertThat(name).isEqualTo("Test Industry");
+    }
+    @Test
+    void doesNotNeedCars() {
+        int maxCars = 0;
+        final Industry industry = new Industry("Test 1", maxCars);
+        assertThat(industry.needsCars()).isFalse();
+    }
+    @Test
+    void needsCars() {
+        int maxCars = 1;
+        final Industry industry = new Industry("Test 1", maxCars);
+        assertThat(industry.needsCars()).isTrue();
     }
 }
