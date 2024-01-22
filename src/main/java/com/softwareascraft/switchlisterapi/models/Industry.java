@@ -1,5 +1,6 @@
 package com.softwareascraft.switchlisterapi.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Industry {
@@ -17,5 +18,9 @@ public class Industry {
 
     public boolean needsCars() {
         return maxCars > carsAtIndustry.size();
+    }
+
+    public void spotCar(RollingStock rollingStock) {
+        this.carsAtIndustry.add(rollingStock);
     }
 }
