@@ -14,16 +14,24 @@ public class IndustryTests {
         final String name = industry.Name;
         assertThat(name).isEqualTo("Test Industry");
     }
+
     @Test
     void doesNotNeedCars() {
         int maxCars = 0;
         final Industry industry = new Industry("Test 1", maxCars);
         assertThat(industry.needsCars()).isFalse();
     }
+
     @Test
-    void needsCars() {
+    void needsCarsWhenItHasNone() {
         int maxCars = 1;
         final Industry industry = new Industry("Test 1", maxCars);
         assertThat(industry.needsCars()).isTrue();
     }
+//    @Test
+//    void DoesNotCarsWhenItHasOne() {
+//        int maxCars = 1;
+//        final Industry industry = new Industry("Test 1", maxCars);
+//        assertThat(industry.needsCars()).isTrue();
+//    }
 }
