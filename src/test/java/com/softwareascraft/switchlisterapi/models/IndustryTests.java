@@ -11,7 +11,7 @@ public class IndustryTests {
     @Test
     void shouldReturnName() {
         final Industry industry = new Industry("Test Industry");
-        final String name = industry.Name();
+        final String name = industry.Name;
         assertThat(name).isEqualTo("Test Industry");
     }
 }

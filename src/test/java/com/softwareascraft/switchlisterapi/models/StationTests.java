@@ -14,13 +14,13 @@ public class StationTests {
     @Test
     void returnsStationName1() {
         final Station station = new Station("Name1", 0, Collections.emptyList());
-        assertThat(station.Name()).isEqualTo("Name1");
+        assertThat(station.Name).isEqualTo("Name1");
     }
 
     @Test
     void returnsStationName2() {
         final Station station = new Station("Name2", 0, Collections.emptyList());
-        assertThat(station.Name()).isEqualTo("Name2");
+        assertThat(station.Name).isEqualTo("Name2");
     }
     @Test
     void needsCars() {

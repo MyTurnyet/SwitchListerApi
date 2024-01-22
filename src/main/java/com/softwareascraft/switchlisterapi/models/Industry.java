@@ -1,13 +1,12 @@
 package com.softwareascraft.switchlisterapi.models;
 
 public class Industry {
-    private final String name;
+
+    public final String Name;
 
     public Industry(String name) {
-        this.name = name;
+        this.Name = name;
     }
 
-    public String Name() {
-        return name;
-    }
+
 }
